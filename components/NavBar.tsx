@@ -84,10 +84,14 @@ export function SidebarDemo() {
   const [open, setOpen] = useState(false);
   return (
     <div className={cn()}>
-      <Sidebar open={open} setOpen={setOpen} className="fixed inset-0 z-50">
-        <SidebarBody className="relative z-50">
-          <div className="h-full overflow-y-auto overflow-x-hidden">
-            <div className="flex flex-col items-center h-full justify-evenly">
+      <Sidebar
+        open={open}
+        setOpen={setOpen}
+        className="fixed inset-0 z-50 overflow-hidden"
+      >
+        <SidebarBody className="relative z-50 overflow-auto">
+          <div className="h-full overflow-y-hidden overflow-x-hidden">
+            <div className="flex flex-col items-center h-full justify-evenly mt-7">
               {links.map((link, idx) => (
                 <SidebarLink key={idx} link={link} className="text-6xl" />
               ))}

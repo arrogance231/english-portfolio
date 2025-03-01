@@ -12,6 +12,14 @@ export default {
       display: ["group-hover"],
       animation: {
         gradient: "gradient 6s linear infinite",
+        marquee: "marquee 5s linear infinite",
+        circular: "circular 5s linear infinite",
+        rotate: "rotate 2s linear",
+        swap: "swap 4s ease-in-out",
+        arcUp: "arcUp 2s ease-in-out infinite",
+        arcDown: "arcDown 2s ease-in-out infinite",
+        moveUpRight: "moveUpRight 2s ease-in-out infinite",
+        moveDownLeft: "moveDownLeft 2s ease-in-out infinite",
       },
       keyframes: {
         gradient: {
@@ -22,6 +30,45 @@ export default {
           "50%": {
             "background-size": "200% 200%",
             "background-position": "0% 100%",
+          },
+        },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        circular: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        rotate: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        swap: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(50px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        arcUp: {
+          "0%": { transform: "translate(0, 0) rotate(0deg)" },
+          "50%": { transform: "translate(50px, -50px) rotate(180deg)" },
+          "100%": { transform: "translate(0, 0) rotate(360deg)" },
+        },
+        arcDown: {
+          "0%": { transform: "translate(0, 0) rotate(0deg)" },
+          "50%": { transform: "translate(-50px, 50px) rotate(-180deg)" },
+          "100%": { transform: "translate(0, 0) rotate(-360deg)" },
+        },
+        moveUpRight: {
+          "0%": { transform: "translateX(0) translateY(0) rotate(0deg)" },
+          "100%": {
+            transform: "translateX(150px) translateY(-100px) rotate(180deg)",
+          },
+        },
+        moveDownLeft: {
+          "0%": { transform: "translateX(0) translateY(0) rotate(0deg)" },
+          "100%": {
+            transform: "translateX(-150px) translateY(100px) rotate(-180deg)",
           },
         },
       },
@@ -77,5 +124,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwindcss-motion")],
 } as Config;

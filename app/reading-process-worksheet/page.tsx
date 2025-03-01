@@ -14,11 +14,11 @@ export default function Home() {
           className="h-full w-full"
         />
         <div className="absolute inset-0 flex flex-col md:flex-row">
-          <SidebarDemo className="h-full" />
+          <SidebarDemo />
           <div className="flex flex-col md:flex-row items-center justify-center text-left p-8 md:p-36 w-full h-full">
             <Link
               href="#"
-              className="h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-b from-[#133B5C]/50 to-[#FFA6AF]/50"
+              className="motion-delay-1000/rotate motion-rotate-in-[-90deg] motion-opacity-in-0 motion-blur-in-md h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-b from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">
                 First Reading Process Worksheet
@@ -26,7 +26,7 @@ export default function Home() {
             </Link>
             <Link
               href="#"
-              className="h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-b from-[#133B5C]/50 to-[#FFA6AF]/50"
+              className="motion-delay-1000/rotate motion-rotate-in-[90deg] motion-opacity-in-0 motion-blur-in-md h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-b from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">
                 Second Reading Process Worksheet

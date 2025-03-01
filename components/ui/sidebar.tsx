@@ -138,9 +138,9 @@ export const MobileSidebar = ({
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ x: "-100%", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "-100%", opacity: 0 }}
+              initial={{ y: "-100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-100%", opacity: 0 }}
               transition={{
                 duration: 0.3,
                 ease: "easeInOut",
@@ -150,6 +150,12 @@ export const MobileSidebar = ({
                 className
               )}
             >
+              <button
+                className="absolute top-4 right-4 text-white"
+                onClick={() => setOpen(false)}
+              >
+                X
+              </button>
               <SidebarLink
                 link={{
                   label: "Home",
@@ -232,7 +238,6 @@ export const MobileSidebar = ({
     </>
   );
 };
-
 export const SidebarLink = ({
   link,
   className,
@@ -246,15 +251,18 @@ export const SidebarLink = ({
     <Link
       href={link.href}
       className={cn(
-        "flex items-center justify-center gap-2 group/sidebar py-2 relative",
+        "flex flex-col items-center justify-center gap-2 group/sidebar py-2 relative",
         className
       )}
       {...props}
     >
-      <div>{link.icon}</div>
-      <div className="absolute left-0 ml-2 p-2 bg-white dark:bg-neutral-900 rounded shadow-lg opacity-0 group-hover/sidebar:opacity-100 transition-opacity">
+      <div
+        className="absolute z-50 p-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded shadow-lg opacity-0 group-hover/sidebar:opacity-100 transition-opacity transform pointer-events-none"
+        style={{ bottom: "100%", marginBottom: "10px" }}
+      >
         <h1 className="text-2xl w-full text-center">{link.label}</h1>
       </div>
+      <div>{link.icon}</div>
     </Link>
   );
 };

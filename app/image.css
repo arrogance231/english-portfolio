@@ -1,0 +1,4 @@
+.image {
+  opacity: 0.5; /* Adjust the opacity value as needed */
+  transition: opacity 0.3s ease-in-out;
+}

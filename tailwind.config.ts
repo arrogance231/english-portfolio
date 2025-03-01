@@ -9,6 +9,22 @@ export default {
   ],
   theme: {
     extend: {
+      display: ["group-hover"],
+      animation: {
+        gradient: "gradient 6s linear infinite",
+      },
+      keyframes: {
+        gradient: {
+          "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "100% 0%",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "0% 100%",
+          },
+        },
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
@@ -62,4 +78,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} as Config;

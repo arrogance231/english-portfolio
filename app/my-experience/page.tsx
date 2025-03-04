@@ -18,7 +18,7 @@ export default function Home() {
             <div className="text-[24px] md:text-[32px] font-semibold font-poppins leading-none text-[#FFFFFF]">
               My Wonderful Experience!
             </div>
-            <div className="h-full w-full rounded-xl flex items-center justify-center animate-gradient bg-gradient-to-bl from-[#133B5C]/50 to-[#FFA6AF]/50">
+            <div className="h-full w-full rounded-xl flex items-center justify-center animate-gradient bg-gradient-to-br from-[#133B5C]/50 to-[#FFA6AF]/50">
               <h1 className="text-white font-poppins text-3xl md:text-6xl text-center">
                 Loreprep
               </h1>

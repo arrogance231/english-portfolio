@@ -17,7 +17,7 @@ export default function Home() {
           <SidebarDemo />
           <div className="flex flex-col md:flex-row items-center justify-center text-left p-8 md:p-36 w-full h-full">
             <Link
-              href="#"
+              href="/reading-process-worksheet/RPW-1"
               className="motion-delay-1000/rotate motion-rotate-in-[-90deg] motion-opacity-in-0 motion-blur-in-md h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-b from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">

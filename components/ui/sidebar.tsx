@@ -102,7 +102,7 @@ export const DesktopSidebar = ({
           "px-4 py-4 hidden md:flex md:flex-col bg-[#1E1E1E]/50 dark:bg-neutral-800/50 flex-shrink-0 absolute left-0 top-0 h-full group"
         )}
         animate={{
-          width: animate ? (open ? "300px" : "60px") : "300px",
+          width: animate ? (open ? "150px" : "80px") : "150px",
         }}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
@@ -142,7 +142,7 @@ export const MobileSidebar = ({
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: "-100%", opacity: 0 }}
               transition={{
-                duration: 0.3,
+                duration: 1, // Increased duration to prevent stutter
                 ease: "easeInOut",
               }}
               className={cn(

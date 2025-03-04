@@ -15,14 +15,14 @@ export function SidebarDemo() {
   const links = [
     {
       label: "Home",
-      href: "./",
+      href: "/",
       icon: (
         <Image
           src="/home.svg"
           alt="Home"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-24 xl:w-24 flex-shrink-0 h-20 w-20"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
         />
       ),
     },
@@ -36,7 +36,7 @@ export function SidebarDemo() {
           alt="Reading Process Worksheet"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-24 xl:w-24 flex-shrink-0 h-20 w-20"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
         />
       ),
     },
@@ -49,7 +49,7 @@ export function SidebarDemo() {
           alt="Reader Response"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-24 xl:w-24 flex-shrink-0 h-20 w-20"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
         />
       ),
     },
@@ -62,7 +62,7 @@ export function SidebarDemo() {
           alt="iCare Activities"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-24 xl:w-24 flex-shrink-0 h-20 w-20"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
         />
       ),
     },
@@ -75,7 +75,7 @@ export function SidebarDemo() {
           alt="experience"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-24 xl:w-24 flex-shrink-0 h-20 w-20"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
         />
       ),
     },
@@ -93,7 +93,11 @@ export function SidebarDemo() {
           <div className="h-full overflow-y-hidden overflow-x-hidden">
             <div className="flex flex-col items-center h-full justify-evenly mt-7">
               {links.map((link, idx) => (
-                <SidebarLink key={idx} link={link} className="text-6xl" />
+                <SidebarLink
+                  key={idx}
+                  link={link}
+                  className={`text-6xl ${!open ? "h-8 w-8" : "h-16 w-16"}`}
+                />
               ))}
             </div>
           </div>

@@ -21,7 +21,7 @@ export function SidebarDemo() {
     },
     {
       label: "Reading Process Worksheet",
-      href: "./reading-process-worksheet",
+      href: "/reading-process-worksheet",
       iconLink: "#",
       icon: (
         <Image
@@ -35,7 +35,7 @@ export function SidebarDemo() {
     },
     {
       label: "Reader Response",
-      href: "./reader-response",
+      href: "/reader-response",
       icon: (
         <Image
           src="/reader-response.svg"
@@ -48,7 +48,7 @@ export function SidebarDemo() {
     },
     {
       label: "iCare Activities",
-      href: "./icare-activities",
+      href: "/icare-activities",
       icon: (
         <Image
           src="/icare.svg"
@@ -61,7 +61,7 @@ export function SidebarDemo() {
     },
     {
       label: "My Experience",
-      href: "./my-experience",
+      href: "/my-experience",
       icon: (
         <Image
           src="/idea.svg"

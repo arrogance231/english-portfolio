@@ -80,9 +80,11 @@ export function SidebarDemo() {
       <Sidebar
         open={open}
         setOpen={setOpen}
-        className="fixed inset-0 z-50 overflow-hidden"
+        className={`fixed inset-0 z-50 overflow-hidden p-0 ${
+          open ? "w-full" : "w-16"
+        }`}
       >
-        <SidebarBody className="relative z-50 overflow-auto">
+        <SidebarBody className="relative z-50 overflow-auto p-0">
           <div className="h-full overflow-y-hidden overflow-x-hidden">
             <div className="flex flex-col items-center h-full justify-evenly mt-7">
               {links.map((link, idx) => (

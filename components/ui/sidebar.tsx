@@ -58,7 +58,7 @@ export const Sidebar = ({
   open,
   setOpen,
   animate,
-  className,
+  className, // This was previously unused
 }: {
   children: React.ReactNode;
   open?: boolean;
@@ -68,6 +68,7 @@ export const Sidebar = ({
 }) => {
   return (
     <SidebarProvider open={open} setOpen={setOpen} animate={animate}>
+      {/* ✅ Now passing className and children correctly */}
       <SidebarBody className={className}>{children}</SidebarBody>
     </SidebarProvider>
   );
@@ -89,6 +90,7 @@ export const SidebarBody = ({
 };
 
 export const DesktopSidebar = ({
+  className,
   children,
   ...props
 }: React.ComponentProps<typeof motion.div>) => {
@@ -98,7 +100,8 @@ export const DesktopSidebar = ({
     <>
       <motion.div
         className={cn(
-          "px-4 py-4 hidden md:flex md:flex-col bg-[#1E1E1E]/50 dark:bg-neutral-800/50 flex-shrink-0 absolute left-0 top-0 h-full group"
+          "px-4 py-4 hidden md:flex md:flex-col bg-[#1E1E1E]/50 dark:bg-neutral-800/50 flex-shrink-0 absolute left-0 top-0 h-full group",
+          className
         )}
         animate={{
           width: animate ? (open ? "150px" : "80px") : "150px",

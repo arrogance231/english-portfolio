@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col md:flex-row">
           <SidebarDemo />
-          <div className="text-white xl:mx-32 xl:my-8 md:mx-32 mx-5 my-4 p-8 rounded-xl md:p-8 xl:w-full xl:h-full overflow-y-scroll animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
+          <div className="animate-appearFromCenter text-white xl:mx-32 xl:my-8 md:mx-32 mx-5 my-4 p-8 rounded-xl md:p-8 xl:w-full xl:h-full overflow-y-scroll animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
             <div className="grid h-full w-full rounded-x">
               <Image
                 src="/RPW1/S1P1.svg"

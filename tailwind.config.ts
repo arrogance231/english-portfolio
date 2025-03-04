@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,6 +20,7 @@ export default {
         arcDown: "arcDown 2s ease-in-out infinite",
         moveUpRight: "moveUpRight 2s ease-in-out infinite",
         moveDownLeft: "moveDownLeft 2s ease-in-out infinite",
+        appearFromCenter: "appearFromCenter 1.5s ease-in-out forwards",
       },
       keyframes: {
         gradient: {
@@ -69,6 +70,18 @@ export default {
           "0%": { transform: "translateX(0) translateY(0) rotate(0deg)" },
           "100%": {
             transform: "translateX(-150px) translateY(100px) rotate(-180deg)",
+          },
+        },
+        appearFromCenter: {
+          "0%": {
+            opacity: 0,
+            transform: "scale(0.5)",
+            "transform-origin": "center",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "scale(1)",
+            "transform-origin": "center",
           },
         },
       },
@@ -125,4 +138,6 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate"), require("tailwindcss-motion")],
-} as Config;
+};
+
+export default config as unknown as Config;

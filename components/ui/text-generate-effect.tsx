@@ -15,8 +15,11 @@ export const TextGenerateEffect = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
+    if (!scope) return; // ✅ Ensure scope is available before animating
+
     animate(
       "span",
       {
@@ -24,11 +27,11 @@ export const TextGenerateEffect = ({
         filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: duration ? duration : 1,
+        duration: duration || 1,
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [scope, animate, duration, filter]); // ✅ Added `scope` to dependencies
 
   const renderWords = () => {
     return (

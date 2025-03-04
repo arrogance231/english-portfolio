@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { SidebarDemo } from "@/components/NavBar";
 import Link from "next/link";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 export default function Home() {
   return (
     <div className="relative h-screen w-screen flex overflow-hidden">

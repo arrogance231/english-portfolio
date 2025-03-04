@@ -89,7 +89,6 @@ export const SidebarBody = ({
 };
 
 export const DesktopSidebar = ({
-  className,
   children,
   ...props
 }: React.ComponentProps<typeof motion.div>) => {
@@ -116,7 +115,6 @@ export const DesktopSidebar = ({
 
 export const MobileSidebar = ({
   className,
-  children,
   ...props
 }: React.ComponentProps<"div">) => {
   const { open, setOpen } = useSidebar();

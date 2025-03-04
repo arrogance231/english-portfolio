@@ -1,15 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
-import Link from "next/link";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { MobileSidebar } from "./ui/sidebar";
-
-interface SidebarDemoProps {
-  className?: string;
-}
 
 export function SidebarDemo() {
   const links = [

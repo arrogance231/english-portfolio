@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { SidebarDemo } from "@/components/NavBar";
-import Link from "next/link";
 
 export default function Home() {
   return (

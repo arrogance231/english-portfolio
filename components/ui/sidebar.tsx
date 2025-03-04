@@ -160,7 +160,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "Home",
-                  href: "./",
+                  href: "/home",
                   icon: (
                     <Image
                       src="/home.svg"
@@ -175,7 +175,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "Reading Process Worksheet",
-                  href: "./reading-process-worksheet",
+                  href: "/reading-process-worksheet",
                   icon: (
                     <Image
                       src="/reading.svg"
@@ -190,7 +190,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "Reader Response",
-                  href: "./reader-response",
+                  href: "/reader-response",
                   icon: (
                     <Image
                       src="/reader-response.svg"
@@ -205,7 +205,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "iCare Activities",
-                  href: "./icare-activities",
+                  href: "/icare-activities",
                   icon: (
                     <Image
                       src="/icare.svg"
@@ -220,7 +220,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "My Experience",
-                  href: "./my-experience",
+                  href: "/my-experience",
                   icon: (
                     <Image
                       src="/idea.svg"

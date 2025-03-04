@@ -160,7 +160,7 @@ export const MobileSidebar = ({
               <SidebarLink
                 link={{
                   label: "Home",
-                  href: "/home",
+                  href: "/",
                   icon: (
                     <Image
                       src="/home.svg"

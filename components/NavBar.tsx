@@ -8,7 +8,7 @@ export function SidebarDemo() {
   const links = [
     {
       label: "Home",
-      href: "/home",
+      href: "/",
       icon: (
         <Image
           src="/home.svg"

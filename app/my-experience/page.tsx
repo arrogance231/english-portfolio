@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col md:flex-row">
           <SidebarDemo />
-          <div className="flex flex-col items-center text-left p-8 md:p-36 w-full h-full gap-4">
+          <div className="animate-appearFromCenter flex flex-col items-center text-left p-8 md:p-36 w-full h-full gap-4">
             <div className="text-[24px] md:text-[32px] font-semibold font-poppins leading-none text-[#FFFFFF]">
               My Wonderful Experience!
             </div>

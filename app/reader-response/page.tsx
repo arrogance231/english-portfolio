@@ -17,7 +17,7 @@ export default function Home() {
           <SidebarDemo />
           <div className="animate-appearFromCenter flex flex-col md:flex-row items-center justify-center text-left p-8 md:p-36 w-full h-full">
             <Link
-              href="#"
+              href="/reader-response/RR1"
               className="h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">

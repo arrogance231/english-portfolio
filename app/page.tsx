@@ -6,7 +6,7 @@ const line1 = [
   {
     text: "Specialized English Program I",
     className:
-      "text-[24px] sm:text-[24px] md:text-[28px] xl:text-[40px] font-semibold font-poppins leading-none text-white",
+      "text-[16px] sm:text-[24px] md:text-[28px] xl:text-[40px] font-semibold font-poppins leading-none text-white",
     duration: 0,
   },
 ];
@@ -40,7 +40,7 @@ const line2Desktop = [
 
 const line3 = [
   {
-    text: "PORTFOLIO",
+    text: "Portfolio",
     className:
       "text-[64px] sm:text-[40px] md:text-[52px] lg:text-[108px] font-bold font-poppins leading-none text-[#6EBEFF]",
     duration: 0.5,
@@ -60,7 +60,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col md:flex-row">
           <SidebarDemo />
-          <div className="flex flex-col items-start justify-center p-4 pb-44 mt-20 md:mt-0 md:p-16 lg:p-32 xl:p-64 ml-2 md:ml-10 lg:ml-2 h-full">
+          <div className=" w-screen flex flex-col items-start justify-center p-4 pb-44 mt-20 md:mt-0 md:p-16 lg:p-32 xl:p-64 ml-2 md:ml-10 lg:ml-2 h-full">
             <TypewriterEffectSmooth
               words={line1}
               className={`${line1[0].className} xl:-mb-1`}

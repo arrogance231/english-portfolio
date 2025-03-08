@@ -14,8 +14,8 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col md:flex-row">
           <SidebarDemo />
-          <div className="animate-appearFromCenter text-white xl:mx-32 xl:my-8 md:mx-32 mx-5 my-4 p-8 pb-16 rounded-xl md:p-8 w-screen h-screen overflow-y-auto animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
-            <div className="grid h-full w-full overflow-y-auto">
+          <div className="animate-appearFromCenter text-white xl:mx-32 xl:my-8 md:mx-32 mt-10 my-4 p-8 pb-16 rounded-xl md:p-8 w-screen overflow-y-auto animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
+            <div className="grid relative w-full">
               <Image
                 src="/RR1/S2P1.svg"
                 alt="p1"
@@ -28,7 +28,7 @@ export default function Home() {
                 alt="p1"
                 width={0}
                 height={0}
-                className="w-full h-full"
+                className="w-full h-full top-0"
               ></Image>
             </div>
           </div>

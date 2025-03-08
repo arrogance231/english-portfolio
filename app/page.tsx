@@ -63,18 +63,18 @@ export default function Home() {
           <div className="z-0 flex flex-col items-start justify-center p-4 pb-44 mt-20 md:mt-0 md:p-16 lg:p-32 xl:p-64 ml-2 md:ml-10 lg:ml-2 h-full">
             <TypewriterEffectSmooth
               words={line1}
-              className={`${line1[0].className} xl:-mb-9`}
+              className={`${line1[0].className} xl:-mb-9 -mb-4`}
               delay={line1[0].duration}
             />
             <div className="block md:hidden">
               <TypewriterEffectSmooth
                 words={line2_1Mobile}
-                className={`${line2_1Mobile[0].className} -mb-3`}
+                className={`${line2_1Mobile[0].className} -mb-8`}
                 delay={line2_1Mobile[0].duration}
               />
               <TypewriterEffectSmooth
                 words={line2_2Mobile}
-                className={`${line2_2Mobile[0].className} -mb-3`}
+                className={`${line2_2Mobile[0].className} -mb-8`}
                 delay={line2_2Mobile[0].duration}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
               className={`${line3[0].className} xl:-mb-12`}
               delay={line3[0].duration}
             />
-            <div className="xl:px-64 absolute bottom-0 right-0 z-50 flex flex-col md:flex-row justify-evenly items-center xl:py-16 space-y-4 md:space-y-0 md:space-x-4 w-full xl:mr-12">
+            <div className="xl:px-64 absolute bottom-0 right-0 z-50 flex flex-col md:flex-row justify-evenly items-center xl:py-16 space-y-4 mb-10 md:space-y-0 md:space-x-4 w-full xl:mr-12">
               <div className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white">
                 Arjhine A. Ty
               </div>

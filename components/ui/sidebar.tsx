@@ -100,11 +100,11 @@ export const DesktopSidebar = ({
     <>
       <motion.div
         className={cn(
-          "px-4 py-4 hidden md:flex md:flex-col bg-[#1E1E1E]/50 dark:bg-neutral-800/50 flex-shrink-0 absolute left-0 top-0 h-full group",
+          "px-4 py-4 hidden md:flex md:flex-col bg-[#1E1E1E]/50 dark:bg-neutral-800/50 flex-shrink-0 h-full group fixed top-0 left-0",
           className
         )}
         animate={{
-          width: animate ? (open ? "150px" : "80px") : "150px",
+          width: animate ? (open ? "150px" : "80px") : "250px",
         }}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
@@ -125,7 +125,7 @@ export const MobileSidebar = ({
     <>
       <div
         className={cn(
-          "h-10 px-4 py-4 flex flex-row md:hidden items-center justify-between w-full",
+          "h-10 px-4 py-4 flex flex-row md:hidden items-center justify-between w-full fixed top-0 left-0 z-50",
           className
         )}
         {...props}
@@ -139,15 +139,15 @@ export const MobileSidebar = ({
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ y: "-100%", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: "-100%", opacity: 0 }}
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: "-100%", opacity: 0 }}
               transition={{
-                duration: 1, // Increased duration to prevent stutter
+                duration: 0.5,
                 ease: "easeInOut",
               }}
               className={cn(
-                "fixed h-full w-full inset-0 bg-[#1E1E1E]/50 dark:bg-neutral-900 p-10 z-[100] flex flex-col justify-center items-center space-y-4",
+                "fixed h-full w-3/4 inset-0 bg-[#1E1E1E]/50 dark:bg-neutral-900 p-10 z-[100] flex flex-col justify-center items-center space-y-4",
                 className
               )}
             >
@@ -239,6 +239,7 @@ export const MobileSidebar = ({
     </>
   );
 };
+
 export const SidebarLink = ({
   link,
   className,

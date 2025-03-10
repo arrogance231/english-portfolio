@@ -15,7 +15,7 @@ export function SidebarDemo() {
           alt="Home"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 md:w-16 md:h-16 flex-shrink-0"
         />
       ),
     },
@@ -29,7 +29,7 @@ export function SidebarDemo() {
           alt="Reading Process Worksheet"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 md:w-16 md:h-16 flex-shrink-0"
         />
       ),
     },
@@ -42,7 +42,7 @@ export function SidebarDemo() {
           alt="Reader Response"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 md:w-16 md:h-16 flex-shrink-0"
         />
       ),
     },
@@ -55,7 +55,7 @@ export function SidebarDemo() {
           alt="iCare Activities"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0 md:w-16 md:h-16"
         />
       ),
     },
@@ -68,7 +68,7 @@ export function SidebarDemo() {
           alt="experience"
           width={20}
           height={20}
-          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 flex-shrink-0"
+          className="text-neutral-700 dark:text-neutral-200 xl:h-16 xl:w-16 md:w-16 md:h-16 flex-shrink-0"
         />
       ),
     },
@@ -80,11 +80,11 @@ export function SidebarDemo() {
       <Sidebar
         open={open}
         setOpen={setOpen}
-        className={`fixed inset-0 z-50 overflow-hidden p-0 ${
+        className={`fixed inset-0 z-10 overflow-hidden p-0 ${
           open ? "w-full" : "w-16"
         }`}
       >
-        <SidebarBody className="relative z-50 overflow-auto p-0">
+        <SidebarBody className="relative overflow-auto p-0">
           <div className="h-full overflow-y-hidden overflow-x-hidden">
             <div className="flex flex-col items-center h-full justify-evenly mt-7">
               {links.map((link, idx) => (

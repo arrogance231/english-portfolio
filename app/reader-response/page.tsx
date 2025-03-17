@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-screen flex overflow-hidden">
+    <div className="relative h-[100vh] w-screen flex overflow-hidden">
       <div className="relative h-full w-full">
         <Image
           src="/bg.svg"
@@ -25,7 +25,7 @@ export default function Home() {
               </h1>
             </Link>
             <Link
-              href="#"
+              href="/reader-response/RR2"
               className=" h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">

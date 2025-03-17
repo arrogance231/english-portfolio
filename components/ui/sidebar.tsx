@@ -130,18 +130,20 @@ export const MobileSidebar = ({
         )}
         {...props}
       >
-        <div className="flex justify-end z-20 w-full md:hidden">
-          <IconMenu2
-            className="text-neutral-800 dark:text-neutral-200"
-            onClick={() => setOpen(!open)}
-          />
-        </div>
+        {!open && (
+          <div className="flex justify-end z-20 w-full md:hidden">
+            <IconMenu2
+              className="text-neutral-800 dark:text-neutral-200"
+              onClick={() => setOpen(!open)}
+            />
+          </div>
+        )}
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ x: "-100%", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "-100%", opacity: 0 }}
+              initial={{ y: "100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "100%", opacity: 0 }}
               transition={{
                 duration: 0.5,
                 ease: "easeInOut",

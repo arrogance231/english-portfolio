@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-screen flex overflow-hidden">
+    <div className="relative h-[100vh] w-screen flex overflow-hidden">
       <div className="relative h-full w-full">
         <Image
           src="/bg.svg"

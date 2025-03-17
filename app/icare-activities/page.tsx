@@ -3,7 +3,7 @@ import { SidebarDemo } from "@/components/NavBar";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="relative h-screen w-screen flex overflow-hidden">
+    <div className="relative h-[100vh] w-screen flex overflow-hidden">
       <div className="relative h-full w-full">
         <Image
           src="/bg.svg"
@@ -16,19 +16,11 @@ export default function Home() {
           <SidebarDemo />
           <div className="animate-appearFromCenter flex flex-col md:flex-row items-center justify-center text-left p-8 md:p-36 w-full h-full">
             <Link
-              href="#"
+              href="/icare-activities/erc1"
               className="h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-br from-[#133B5C]/50 to-[#FFA6AF]/50"
             >
               <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">
-                First iCare Activity
-              </h1>
-            </Link>
-            <Link
-              href="#"
-              className="h-[30vh] md:h-[50vh] w-[80vw] md:w-[40vw] rounded-xl m-4 flex items-center justify-center animate-gradient bg-gradient-to-tl from-[#133B5C]/50 to-[#FFA6AF]/50"
-            >
-              <h1 className="text-white font-poppins text-2xl md:text-6xl text-center">
-                Second iCare Activity
+                ERC iCare Activity Worksheet
               </h1>
             </Link>
           </div>

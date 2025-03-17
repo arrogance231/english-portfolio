@@ -47,13 +47,13 @@ const line3 = [
 
 export default function Home() {
   return (
-    <div className="relative h-screen flex flex-col overflow-hidden">
+    <div className="relative min-h-screen flex flex-col overflow-hidden h-[100vh]">
       <Image
         src="/bg.svg"
         alt="bg"
         layout="fill"
         objectFit="cover"
-        className="absolute h-full w-full"
+        className="absolute inset-0"
       />
       <div className="relative flex-1 flex flex-col md:flex-row w-screen overflow-hidden">
         <SidebarDemo />

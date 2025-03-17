@@ -1,7 +1,7 @@
 import { SidebarDemo } from "@/components/NavBar";
 import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative w-screen flex overflow-hidden h-[100vh]">
@@ -15,6 +15,9 @@ export default function Home() {
       <div className="relative h-full w-full overflow-hidden">
         <div className="absolute inset-0 flex flex-col xl:px-[100px] px-4">
           <SidebarDemo />
+          <Link href="/reader-response" legacyBehavior>
+            <a className="absolute top-4 right-4 text-white text-2xl ">←</a>
+          </Link>
           <div className="animate-appearFromCenter text-white xl:mx-auto xl:my-8 md:mx-32 mx-2 my-4 mt-10 p-2 md:p-4 xl:w-full xl:h-full overflow-y-auto bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
             <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-8">
               Reading Process Worksheet 1
@@ -208,7 +211,7 @@ export default function Home() {
                         <td className="border px-1 md:px-4 py-2">
                           <p className="text-justify font-semibold">
                             Being too dependent on technology has its downsides
-                            that most of us wouldn’t have realized, like the
+                            that most of us wouldnt have realized, like the
                             halting of the growth of our hippocampus, which is a
                             big part of what helps us memorize and familiarize
                             with things.
@@ -277,7 +280,7 @@ export default function Home() {
                     >
                       <p className="text-justify mb-10">
                         Being too dependent on technology has its downsides that
-                        most of us wouldn’t have realized, like the halting of
+                        most of us wouldnt have realized, like the halting of
                         the growth of our hippocampus, which is a big part of
                         what helps us memorize and familiarize with things.
                       </p>
@@ -292,7 +295,7 @@ export default function Home() {
                         technology, use it for what seems like an important
                         task, but for simple tasks that would require our brain
                         and body to function, we should do it ourselves so that
-                        our brain and body won’t rot to oblivion.
+                        our brain and body wont rot to oblivion.
                       </p>
                     </TabsContent>
                   </Tabs>
@@ -325,15 +328,15 @@ export default function Home() {
                           calculator.
                         </td>
                         <td className="border px-1 md:px-4 py-2">
-                          We’re all getting so used to technology that we don’t
+                          Were all getting so used to technology that we dont
                           bother using our brains for simple tasks like math
-                          anymore. We’re forgetting basic skills because we rely
+                          anymore. Were forgetting basic skills because we rely
                           too much on gadgets.
                         </td>
                       </tr>
                       <tr>
                         <td className="border px-1 md:px-4 py-2">
-                          A study showed that when people use GPS, their brain’s
+                          A study showed that when people use GPS, their brains
                           navigation system basically "switches off."
                         </td>
                         <td className="border px-1 md:px-4 py-2">
@@ -371,7 +374,7 @@ export default function Home() {
                         calculator.
                       </p>
                       <p className="text-justify border-b-t border-gray-400 my-2">
-                        A study showed that when people use GPS, their brain’s
+                        A study showed that when people use GPS, their brains
                         navigation system basically "switches off."
                       </p>
                     </TabsContent>
@@ -380,9 +383,9 @@ export default function Home() {
                       className="m-2 p-2 border border-gray-400 rounded h-72"
                     >
                       <p className="text-justify border-b border-gray-400 mb-2">
-                        We’re all getting so used to technology that we don’t
+                        Were all getting so used to technology that we dont
                         bother using our brains for simple tasks like math
-                        anymore. We’re forgetting basic skills because we rely
+                        anymore. Were forgetting basic skills because we rely
                         too much on gadgets.
                       </p>
                       <p className="text-justify border-b-t border-gray-400 my-2">
@@ -447,9 +450,8 @@ export default function Home() {
                           things, either temporarily or permanently.
                         </td>
                         <td className="border px-1 md:px-4 py-2">
-                          I barely remember anyone’s phone number anymore
-                          because of digital amnesia.I just rely on my contacts
-                          app.
+                          I barely remember anyones phone number anymore because
+                          of digital amnesia.I just rely on my contacts app.
                         </td>
                       </tr>
                       <tr>
@@ -457,15 +459,15 @@ export default function Home() {
                           3. Cognitive Map
                         </td>
                         <td className="border px-1 md:px-4 py-2">
-                          “To do so, they’re required to memorize hundreds of
+                          “To do so, theyre required to memorize hundreds of
                           routes and landmarks and demonstrate their knowledge
                           of them in test situations. They commit to memory
                           thousands of street names and can mentally visualize
-                          hundreds of journeys across the UK’s biggest city.”
+                          hundreds of journeys across the UKs biggest city.”
                         </td>
                         <td className="border px-1 md:px-4 py-2">
-                          I don’t need Google Maps for my campus anymore because
-                          I’ve built a cognitive map of all the shortcuts.
+                          I dont need Google Maps for my campus anymore because
+                          Ive built a cognitive map of all the shortcuts.
                         </td>
                       </tr>
                       <tr>
@@ -494,7 +496,7 @@ export default function Home() {
                         </td>
                         <td className="border px-1 md:px-4 py-2">
                           Because of all the information available online, I
-                          feel like I’m constantly drowning in a digital deluge.
+                          feel like Im constantly drowning in a digital deluge.
                         </td>
                       </tr>
                     </tbody>
@@ -561,11 +563,11 @@ export default function Home() {
                         either temporarily or permanently.{" "}
                       </p>
                       <p className="border-b border-gray-400 p-2">
-                        “To do so, they’re required to memorize hundreds of
+                        “To do so, theyre required to memorize hundreds of
                         routes and landmarks and demonstrate their knowledge of
                         them in test situations. They commit to memory thousands
                         of street names and can mentally visualize hundreds of
-                        journeys across the UK’s biggest city.”
+                        journeys across the UKs biggest city.”
                       </p>
                       <p className="border-b border-gray-400 p-2">
                         Word Parts: Auto - Automatic or without human control
@@ -588,12 +590,12 @@ export default function Home() {
                         the hippocampus and improve memory.
                       </p>
                       <p className="border-b border-gray-400 p-2">
-                        I barely remember anyone’s phone number anymore because
+                        I barely remember anyones phone number anymore because
                         of digital amnesia.I just rely on my contacts app.
                       </p>
                       <p className="border-b border-gray-400 p-2">
-                        I don’t need Google Maps for my campus anymore because
-                        I’ve built a cognitive map of all the shortcuts.
+                        I dont need Google Maps for my campus anymore because
+                        Ive built a cognitive map of all the shortcuts.
                       </p>
                       <p className="border-b border-gray-400 p-2">
                         Self-driving cars are a great example of autonomous AI
@@ -601,16 +603,16 @@ export default function Home() {
                       </p>
                       <p className="border-b border-gray-400 p-2">
                         Because of all the information available online, I feel
-                        like I’m constantly drowning in a digital deluge.
+                        like Im constantly drowning in a digital deluge.
                       </p>
                     </TabsContent>
                   </Tabs>
                 </div>
                 <div className="mb-4 md:mb-8">
                   <h3 className="font-semibold mb-2">Topic of the text:</h3>
-                  <p className="mb-2">Society’s Dependence on Technology</p>
+                  <p className="mb-2">Societys Dependence on Technology</p>
                   <h3 className="font-semibold mb-2">
-                    Writer’s opinion about the text’s topic:
+                    Writers opinion about the texts topic:
                   </h3>
                   <p className="mb-2">
                     The writer believes that while technology enhances
@@ -623,7 +625,7 @@ export default function Home() {
                     reliance on digital tools.
                   </p>
                   <h3 className="font-semibold mb-2">
-                    Support for writer’s opinion (e.g., evidence such as facts,
+                    Support for writers opinion (e.g., evidence such as facts,
                     testimonies, examples, etc.):
                   </h3>
                   <p>
@@ -675,12 +677,12 @@ export default function Home() {
                   </li>
                   <li className="mb-4">
                     <strong>
-                      After considering the author’s profession and affiliation,
+                      After considering the authors profession and affiliation,
                       what possible biases the author might have about the
                       topic?
                     </strong>
                     <p>
-                      The author focused a lot on the customer’s POV as he is a
+                      The author focused a lot on the customers POV as he is a
                       marketing professional. The downsides and such that he
                       have mentioned in the topic are of course being considered
                       by the manufacturers and developers of what we consider as
@@ -697,7 +699,7 @@ export default function Home() {
                       to support the main idea in the text?
                     </strong>
                     <p>
-                      The text’s main purpose is to simply answer the question,
+                      The texts main purpose is to simply answer the question,
                       Are we too dependent on technology? The author
                       accomplishes this by giving examples as to how technology
                       relates to human nature, the negative effects that it
@@ -717,10 +719,10 @@ export default function Home() {
                       The information regarding the hippocampus, specifically
                       with how drivers would not be able to remember as much
                       roads as they would have usually had if GPS did not exist.
-                      I was surprised at this because that didn’t seem to be the
+                      I was surprised at this because that didnt seem to be the
                       case, specially with personal experience. Grab drivers
-                      only use their GPS just to make sure that they don’t get
-                      lost, but they don’t entirely depend on it and the drivers
+                      only use their GPS just to make sure that they dont get
+                      lost, but they dont entirely depend on it and the drivers
                       still know every single area that they are in, as
                       sometimes some do a shortcut, which the GPS does not find
                       most of the time and only a local could do.
@@ -732,8 +734,8 @@ export default function Home() {
                       audience? Is it too formal or too casual? Why?
                     </strong>
                     <p>
-                      The style of writing is just right. It’s formal, but at
-                      the same time it resonates with most people. The simple
+                      The style of writing is just right. Its formal, but at the
+                      same time it resonates with most people. The simple
                       gestures and related phrases have captivated me and would
                       do so as well for other audiences as these experiences are
                       very, “oh, this happened to me too”. kind of thing.

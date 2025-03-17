@@ -1,7 +1,7 @@
 import { SidebarDemo } from "@/components/NavBar";
 import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative w-screen flex overflow-hidden h-[100vh]">
@@ -12,12 +12,16 @@ export default function Home() {
         style={{ objectFit: "cover" }}
         className="absolute h-full w-full"
       />
+
       <div className="relative h-full w-full overflow-hidden">
         <div className="absolute inset-0 flex flex-col xl:px-[100px] px-4">
           <SidebarDemo />
+          <Link href="/reader-response" legacyBehavior>
+            <a className="absolute top-4 right-4 text-white text-2xl ">←</a>
+          </Link>
           <div className="animate-appearFromCenter text-white xl:mx-auto xl:my-8 md:mx-32 mx-2 my-4 mt-10 p-2 md:p-4 xl:w-full xl:h-full overflow-y-auto bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">
             <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-8">
-              Reading Process Worksheet 1
+              Reading Process Worksheet 2
             </h1>
             <div className="text-sm md:text-lg mb-4 md:mb-8 bg-white bg-opacity-20 p-4 rounded-lg shadow-md">
               <p className="font-semibold">GED0001</p>

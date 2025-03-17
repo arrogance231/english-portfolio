@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SidebarDemo } from "@/components/NavBar";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative h-screen w-screen flex flex-col overflow-hidden">
@@ -19,6 +19,11 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col md:flex-row">
           {/* Sidebar */}
           <SidebarDemo />
+          <Link href="/icare-activities" legacyBehavior>
+            <a className="absolute top-4 right-4 z-50 text-white text-2xl ">
+              ←
+            </a>
+          </Link>
 
           {/* Main Content */}
           <div className="animate-appearFromCenter flex flex-col items-center justify-center text-center p-6 md:p-16 w-full h-full mt-5">

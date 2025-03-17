@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SidebarDemo } from "@/components/NavBar";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-
+import Link from "next/link";
 const line1 = [
   {
     text: "Specialized English Program I",
@@ -88,15 +88,25 @@ export default function Home() {
             delay={line3[0].duration}
           />
           <div className="xl:px-64 absolute bottom-0 right-0 z-50 flex flex-col md:flex-row md:px-20 justify-evenly items-center xl:py-16 space-y-4 mb-10 md:space-y-0 md:space-x-4 w-full xl:mr-6">
-            <div className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white">
+            <Link
+              href="https://github.com/arrogance231"
+              className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white"
+            >
               Arjhine A. Ty
-            </div>
-            <div className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white">
-              LinkedIn/Arro
-            </div>
-            <div className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/arrochi/"
+              className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white"
+            >
+              LinkedIn
+            </Link>
+
+            <Link
+              href="https://github.com/arrogance231/portfolio"
+              className="bg-[#133B5C]/45 text-white text-center font-poppins p-2 sm:p-4 rounded-2xl shadow-md w-3/4 sm:w-1/4 border-[1.5px] border-white"
+            >
               Portfolio
-            </div>
+            </Link>
           </div>
         </div>
       </div>

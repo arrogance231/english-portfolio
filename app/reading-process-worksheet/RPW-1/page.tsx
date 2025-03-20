@@ -15,7 +15,7 @@ export default function Home() {
       <div className="relative h-full w-full overflow-hidden">
         <div className="absolute inset-0 flex flex-col xl:px-[100px] px-4">
           <SidebarDemo />
-          <Link href="/reading-processs-worksheet" legacyBehavior>
+          <Link href="/reading-process-worksheet" legacyBehavior>
             <a className="absolute top-4 right-4 text-white text-2xl ">←</a>
           </Link>
           <div className="animate-appearFromCenter text-white xl:mx-auto xl:my-8 md:mx-32 mx-2 my-4 mt-10 p-2 md:p-4 xl:w-full xl:h-full overflow-y-auto bg-gradient-to-t from-[#133B5C]/50 to-[#FFA6AF]/50">

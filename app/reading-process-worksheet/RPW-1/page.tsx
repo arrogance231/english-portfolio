@@ -43,7 +43,7 @@ export default function Home() {
               </p>
               <p className="mt-2">
                 <span className="font-semibold">DATE:</span>{" "}
-                <span className="underline">February 7, 2025</span>
+                <span className="underline">February 8, 2025</span>
               </p>
               <p className="mt-2">
                 <span className="font-semibold">TEXT TYPE:</span>{" "}
